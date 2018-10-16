@@ -1,0 +1,27 @@
+//
+//  Information retrieval course
+//  First version: Johan Boye 2016
+//
+// In this file you can put your regular expressions
+// for matching non-standard words (like mail addresses).
+//
+// As you have probably already understood, lines beginning
+// with "//" are comments.
+
+// Twenty-four seven
+\d+/\d+
+
+// ADD YOUR PATTERNS HERE
+^[A-Z0-9a-z._]{1,64}@[A-Z0-9a-z._]{1,255}
+^[0,9\-\+]{9,15}$
+\d+([\.\,\/\:]\d+)+
+\w+([\-\']\w+)+
+[\w\d]+\.+[\w\d]\.+
+\-\-
+\$\d+
+\+\d+
+(?<=')[\w+]{3,5}
+[\']+[\w+]{1,2}
+http?:\/\/.*
+^(http|https)://.*$
+(.*)\.shtml
